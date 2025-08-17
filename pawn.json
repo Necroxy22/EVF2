@@ -1,0 +1,5 @@
+{
+    "user": "Necroxy22",
+    "repo": "EVF2",
+    "dependencies": ["samp-incognito/samp-streamer-plugin"]
+}

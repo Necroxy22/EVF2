@@ -2826,8 +2826,8 @@ stock EVF::CreateVehicle(modelid,Float:x,Float:y,Float:z,Float:angle,color1,colo
 		if(color2 == -1) color2 = randcolor2;
 	}
 	switch(modelid){
-		case 569, 570, 537, 538: 	vehicleid = AddStaticVehicleEx(modelid,x,y,z,angle,color1,color2,respawn_delay,addsiren);
-		default: 					vehicleid = CreateVehicle(modelid,x,y,z,angle,color1,color2,respawn_delay,addsiren);
+		case 569, 570, 537, 538: 	vehicleid = AddStaticVehicleEx(modelid,x,y,z,angle,color1,color2,respawn_delay,bool:addsiren);
+		default: 					vehicleid = CreateVehicle(modelid,x,y,z,angle,color1,color2,respawn_delay,bool:addsiren);
 	}
 	if(vehicleid == INVALID_VEHICLE_ID || !IsValidVehicle(vehicleid)){
 		printf("[ADM] Error: Your server have reached MAX_VEHICLES limit (%i).",MAX_VEHICLES);
